@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@media(max-width:479px){
+	h1,h2,h3{
+		text-align:center;
+	}
+	.spclear{
+		clear:both;
+	}
+	h1 a{
+		text-decoration:none;
+		color:#fff;
+	}
+	h1 a:visited{
+		color:#fff;
+	}
+	h1 a:hover{
+		color:#ccc;
+	}	
+	
+	#btnview{
+		position:fixed;
+		bottom:0;
+		left:42%;
+	}
+	
+		#btnSP{
+			display:none;
+		}
+		
+	#menu a{
+		font-size:1.7em;
+		width:50%;
+		margin:auto;
+	}
+	
+	#logo{
+		display:none;
+	}
+	
+	{
+		margin-bottom:14em;
+	}
+}

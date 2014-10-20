@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- IE8+に対して「IE=edge」と指定することで、利用できる最も互換性の高い最新のエンジンを使用するよう指示できます
+		参考: https://www.modern.ie/en-us/performance/how-to-use-x-ua-compatible -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+
+
+<title>SEPTAビル</title>
+<meta name="description" content="" /><!-- ページの紹介文 -->
+<meta name="keywords" content="" /><!-- 検索キーワード -->
+<meta name="author" content="" /><!-- 著者情報 -->
+
+
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<!-- モバイル端末への対応、ページをビューポートの幅に合わせてレンダリング（Android,iOS6以降）
+		ズームを許可しない設定「user-scalable=no」は加えない
+        ※今回はあえて使用し、文字サイズ可変とPC表示時yes設定併用 -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="css/1_common.css" />
+<link rel="stylesheet" type="text/css" href="css/2_sp.css" />
+<link rel="stylesheet" type="text/css" href="css/3_pc.css" />
+<!-- IE8以下用に2つのスクリプトを記述
+		html5shiv.js: IE8以下にHTML5の要素を認識するようにさせる
+		respond.js: IE8以下にMedia Queriesの代替え機能を提供 -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- iOS/Android用のアイコン指定 -->
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="icon" sizes="196x196" href="apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png" />
+
+<!-- バージョン択一 jsフォルダ内ファイルも削除 -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<!-- スクリプトでブロッキングを起こさないものはここに記述
+		可能であれば「async（文書の読み込みが完了した時点でスクリプトを実行）」を使用
+		Example: <script src="" async></script> -->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/my_script.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+<header id="index">
+    <h1><a href="index.html" title="TOPページ">SEPTAビル</a></h1>
+</header>
+
+<nav>
+    <div id="btn">
+        <div id="btnview">
+            <ul>
+                <li><a id="btnPC" href="#" title="PC表示ボタン"><img src="images/pc.png" alt="PC表示" width="70" height="70" /></a></li>
+                <li><a id="btnSP" href="#" title="スマホ表示ボタン"><img src="images/sp.png" alt="スマホ表示" width="100" height="100" /></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="menu">
+        <ul>
+          <li><a id="m1" href="#" title="メニュー１">メニュー１</a></li>
+          <li><a id="m2" href="#" title="メニュー２">メニュー２</a></li>
+          <li><a id="m3" href="#" title="メニュー３">メニュー３</a></li>
+          <li><a id="m4" href="#" title="メニュー４">メニュー４</a></li>
+          <li><a id="m5" href="#" title="メニュー５">メニュー５</a></li>
+          <li><a id="m6" href="#" title="メニュー６">メニュー６</a></li>
+          <li><a id="m7" href="#" title="メニュー７">メニュー７</a></li>
+        </ul>
+    </div>
+</nav>
+<div id="logo"><a href="index.html" title="TOPページ"><img src="images/logo.png" alt="SEPTAロゴマーク" /></a></div>
+</div><!-- wrapper -->
+
+<!-- スクリプトでブロッキングを起こすものはここに記述
+		ブロッキングを起こす原因としては、
+		CSSのセレクタ操作（IE）、負荷の高いDOM操作、多数のスクリプトなど -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@media(min-width:480px){
+	header#index{
+		display:none;
+	}
+	
+	#btn{
+		font-size:0.8em;
+	}
+	
+	#btnPC{
+		display:none;
+	}
+	
+	#menu li{
+		width:26%;
+		line-height:3em;
+	}
+		#m1{
+			transform:matrix(1,-2,1.5,1,0,201);
+			-moz-transform:matrix(1,-2,1.5,1,0,201);
+			-webkit-transform:matrix(1,-2,1.5,1,0,201);
+			-o-transform:matrix(1,-2,1.5,1,0,201);
+			-ms-transform:matrix(1,-2,1.5,1,0,201);
+		}
+		#m2{
+			transform:matrix(1,-2,1.5,1,90,137);
+			-moz-transform:matrix(1,-2,1.5,1,90,137);
+			-webkit-transform:matrix(1,-2,1.5,1,90,137);
+			-o-transform:matrix(1,-2,1.5,1,90,137);
+			-ms-transform:matrix(1,-2,1.5,1,90,137);
+		}
+		#m3{
+			transform:matrix(1,-2,1.5,1,180,73);
+			-moz-transform:matrix(1,-2,1.5,1,180,73);
+			-webkit-transform:matrix(1,-2,1.5,1,180,73);
+			-o-transform:matrix(1,-2,1.5,1,180,73);
+			-ms-transform:matrix(1,-2,1.5,1,180,73);
+		}
+		#m4{
+			transform:matrix(1,-2,1.5,1,270,9);
+			-moz-transform:matrix(1,-2,1.5,1,270,9);
+			-webkit-transform:matrix(1,-2,1.5,1,270,9);
+			-o-transform:matrix(1,-2,1.5,1,270,9);
+			-ms-transform:matrix(1,-2,1.5,1,270,9);
+		}
+		#m5{
+			transform:matrix(1,-2,1.5,1,360,-55);
+			-moz-transform:matrix(1,-2,1.5,1,360,-55);
+			-webkit-transform:matrix(1,-2,1.5,1,360,-55);
+			-o-transform:matrix(1,-2,1.5,1,360,-55);
+			-ms-transform:matrix(1,-2,1.5,1,360,-55);
+		}
+		#m6{
+			transform:matrix(1,-2,1.5,1,450,-119);
+			-moz-transform:matrix(1,-2,1.5,1,450,-119);
+			-webkit-transform:matrix(1,-2,1.5,1,450,-119);
+			-o-transform:matrix(1,-2,1.5,1,450,-119);
+			-ms-transform:matrix(1,-2,1.5,1,450,-119);
+		}
+		#m7{
+			transform:matrix(1,-2,1.5,1,540,-183);
+			-moz-transform:matrix(1,-2,1.5,1,540,-183);
+			-webkit-transform:matrix(1,-2,1.5,1,540,-183);
+			-o-transform:matrix(1,-2,1.5,1,540,-183);
+			-ms-transform:matrix(1,-2,1.5,1,540,-183);
+		}
+#logo img{
+	width:20%;
+	position:fixed;
+	right:0;
+	bottom:0;
+}
+
+	section{
+		width:70%;
+		float:left;
+	}	
+		section article{
+			width:45%;
+			float:left;
+		}
+
+	aside{
+		width:30%;
+		float:left;
+	}
+}
